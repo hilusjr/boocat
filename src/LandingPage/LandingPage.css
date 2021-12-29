@@ -1,0 +1,58 @@
+nav {
+	display: flex;
+	box-sizing: border-box;
+	padding: 0.5rem 0;
+}
+
+nav button {
+	padding: 0 1em;
+	text-transform: uppercase;
+	height: 4rem;
+	font-size: 1.5rem;
+	font-weight: 600;
+	background: none;
+	border: none;
+}
+
+nav button:last-child {
+	margin-left: auto;
+	border-radius: 0.25em;
+}
+
+.container {
+	width: min(70rem, 90%);
+	max-width: 1500px;
+	margin: 0 auto;
+}
+
+.home-screen {
+	margin: 10vh 0 0 0;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	box-sizing: border-box;
+}
+
+.home-screen h1 {
+	grid-column: span 2;
+	grid-row: span 2;
+	position: relative;
+	font-size: 10rem;
+}
+
+.home-screen p {
+	margin: 2rem 0;
+	font-size: 2rem;
+	font-weight: 500;
+	text-align: justify;
+	color: var(--dark400);
+}
+
+.home-screen button {
+	background: var(--dark700);
+	color: var(--light1000);
+	border: none;
+	height: 4.5rem;
+	font-size: 2rem;
+	padding: 0.5em 1em;
+	margin: 2rem auto;
+}
