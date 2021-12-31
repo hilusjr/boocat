@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import '../css/Discover.css'
-// import DiscoverDefault from '../components/DiscoverDefault'
+import DiscoverDefault from '../components/DiscoverDefault'
 import DiscoverSearch from '../components/DiscoverSearch'
 
 function Discover() {
@@ -32,7 +32,7 @@ function Discover() {
 					SEARCH
 				</button>
 			</div>
-			{/* <DiscoverDefault /> */}
+			<DiscoverDefault />
 			<DiscoverSearch search={search} />
 		</div>
 	)

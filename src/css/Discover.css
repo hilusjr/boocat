@@ -37,10 +37,21 @@
 /* --------------------------- CONTENT --------------------------- */
 
 .discover-content {
-	padding-top: 3rem;
 	display: grid;
 	grid-template-columns: repeat(5, 1fr);
 	gap: 2rem;
+}
+
+@media (max-width: 120rem) {
+	.discover-content {
+		grid-template-columns: repeat(4, 1fr);
+	}
+}
+
+h2 {
+	margin: 5rem 0 1rem 0;
+	font-size: 3rem;
+	width: 100%;
 }
 
 .book-card {
@@ -84,7 +95,7 @@
 }
 
 .book-info div:first-child {
-	font-size: 1.5rem;
+	font-size: clamp(1.5rem, 1rem + 1vw, 2rem);
 	font-weight: 600;
 	margin: 2rem 0 1rem 0;
 }
