@@ -7,8 +7,10 @@ header {
 header div:first-child {
 	height: 3rem;
 	width: 3rem;
+	margin-right: 1rem;
 	background-image: url('../boocat.svg');
 	background-size: contain;
+	border-radius: 0.25rem;
 }
 
 header span {
@@ -25,7 +27,6 @@ aside {
 	position: fixed;
 	top: 5rem;
 	width: 20rem;
-	/* padding: 2rem 1rem 0 0; */
 }
 
 aside div {
@@ -33,7 +34,7 @@ aside div {
 	margin-bottom: 0.2rem;
 	padding: 1rem 0 1rem 1rem;
 	font-size: 1.25rem;
-	font-weight: 500;
+	font-weight: 600;
 	background: #fff;
 	background: -webkit-linear-gradient(
 		to bottom right,
@@ -45,7 +46,7 @@ aside div {
 	background-repeat: no-repeat;
 	background-position-x: -20rem;
 	border-radius: 0 0.5rem 0.5rem 0;
-	transition: all 0.3s ease-in-out, font-weight 0s 0.15s;
+	transition: all 0.2s ease-in-out, font-weight 0s 0.1s;
 }
 
 aside div:hover {
@@ -58,8 +59,7 @@ aside div:hover {
 	position: absolute;
 	top: 5rem;
 	left: 20rem;
-	padding: 1rem;
+	padding: 0 3rem;
 	width: calc(100% - 20rem);
-	border: 1px solid black;
 	box-sizing: border-box;
 }

@@ -56,3 +56,13 @@ nav button:last-child {
 	padding: 0.5em 1em;
 	margin: 2rem auto;
 }
+
+.discover-preview {
+	display: block;
+	width: 60%;
+	margin: 4rem auto 2rem auto;
+	-webkit-box-shadow: 0px 0px 5px -1px rgba(66, 68, 90, 1);
+	-moz-box-shadow: 0px 0px 5px -1px rgba(66, 68, 90, 1);
+	box-shadow: 0px 0px 5px -1px rgba(66, 68, 90, 1);
+	border-radius: 0.5rem;
+}
