@@ -6,9 +6,9 @@ import Boocat from './Boocat'
 function App() {
 	return (
 		<>
-			{/* <LandingPage /> */}
+			<LandingPage />
 			{/* <LoginPage /> */}
-			<Boocat />
+			{/* <Boocat /> */}
 		</>
 	)
 }

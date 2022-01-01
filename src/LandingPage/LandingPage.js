@@ -1,22 +1,38 @@
 import '../LandingPage/LandingPage.css'
-import discoverPreview from '../LandingPage/discover-preview.png'
+import discoverPreview from '../LandingPage/discover-preview.svg'
 
 function LandingPage() {
 	return (
 		<>
 			<div className="container">
 				<nav>
-					<button>what's boocat</button>
+					<button>about</button>
 					<button>contact</button>
 					<button className="bg-gradient">open panel</button>
 				</nav>
-				<section className="home-screen">
-					<h1 className="text-gradient">Boocat</h1>
-					<p>Simple tool to manage your books online.</p>
-					<button>Read more</button>
+				<section className="welcome-screen">
+					<div>
+						<h1 className="text-gradient">Boocat</h1>
+					</div>
+					<div>
+						<p>Simple tool to manage your books online.</p>
+						<button className="button-dark">Read more</button>
+					</div>
+					<img className="discover-preview" src={discoverPreview} />
 				</section>
 			</div>
-			<img className="discover-preview" src={discoverPreview} />
+			<div className="container">
+				<section className="about-screen">
+					<div>
+						<h1 className="text-gradient">About</h1>
+					</div>
+					<div>
+						<p>Simple tool to manage your books online.</p>
+						<button className="button-dark">Read more</button>
+					</div>
+					{/* <img className="discover-preview" src={discoverPreview} /> */}
+				</section>
+			</div>
 		</>
 	)
 }

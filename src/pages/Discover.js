@@ -6,15 +6,21 @@ import DiscoverSearch from '../components/DiscoverSearch'
 function Discover() {
 	const [searchInput, setSearchInput] = useState('')
 	const [search, setSearch] = useState('')
-	const KEYCODE_ENTER = 13
+	const [isSearched, setIsSearched] = useState(false)
 
 	const keyPressHandler = e => {
+		if (e.key === 'Backspace' && searchInput.length === 0) {
+			setIsSearched(false)
+			return
+		}
 		if (e.key !== 'Enter') return
 		updateSearch()
 	}
 
 	const updateSearch = () => {
+		if (searchInput.length === 0) return
 		setSearch(searchInput)
+		setIsSearched(true)
 	}
 
 	return (
@@ -27,13 +33,12 @@ function Discover() {
 					placeholder="Search"
 					onChange={e => setSearchInput(e.target.value)}
 					onKeyPress={keyPressHandler}
+					onKeyUp={keyPressHandler}
 				/>
-				<button className="bg-gradient" onClick={updateSearch}>
-					SEARCH
-				</button>
+				<button onClick={updateSearch}>SEARCH</button>
 			</div>
-			<DiscoverDefault />
-			<DiscoverSearch search={search} />
+			<DiscoverDefault isSearched={isSearched} />
+			<DiscoverSearch search={search} isSearched={isSearched} />
 		</div>
 	)
 }

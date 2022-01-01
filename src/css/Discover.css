@@ -16,14 +16,14 @@
 	font-weight: 500;
 	/* background-color: var(--light900); */
 	border: none;
-	border: 3px solid #0abaff;
+	border: 3px solid var(--light900);
 	border-radius: 0.5rem;
 	transition: all 0.3s;
 }
 
 .search-bar:focus {
 	outline: none;
-	border: 3px solid #ee00ff;
+	border: 3px solid var(--light400);
 }
 
 .discover-header button {
@@ -32,6 +32,8 @@
 	padding: 0.5rem 1rem;
 	font-size: 2rem;
 	font-weight: 600;
+	background-color: var(--light900);
+	color: var(--dark700);
 }
 
 /* --------------------------- CONTENT --------------------------- */
@@ -40,6 +42,7 @@
 	display: grid;
 	grid-template-columns: repeat(5, 1fr);
 	gap: 2rem;
+	padding-bottom: 3rem;
 }
 
 @media (max-width: 120rem) {
@@ -52,6 +55,17 @@ h2 {
 	margin: 5rem 0 1rem 0;
 	font-size: 3rem;
 	width: 100%;
+	text-transform: capitalize;
+}
+
+.search-h2 {
+	font-size: 2rem;
+	font-weight: 600;
+}
+
+.search-h2 span {
+	font-weight: 500;
+	text-transform: uppercase;
 }
 
 .book-card {
@@ -74,7 +88,7 @@ h2 {
 	justify-content: space-around;
 	padding: 0 1rem;
 	box-sizing: border-box;
-	background: #0aefff;
+	/* background: #0aefff;
 	background: -webkit-linear-gradient(
 		to bottom right,
 		#0aefff 0%,
@@ -85,7 +99,8 @@ h2 {
 		#0aefff3f 0%,
 		#ee00ff48 100%
 	);
-	background: linear-gradient(to bottom right, #0aefff8c 0%, #ee00ff8c 100%);
+	background: linear-gradient(to bottom right, #0aefff8c 0%, #ee00ff8c 100%); */
+	background-color: hsl(0 0% 0% / 0.7);
 	color: var(--light1000);
 }
 @supports (backdrop-filter: blur(2rem)) {

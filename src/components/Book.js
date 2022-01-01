@@ -13,7 +13,7 @@ function Book({ title, author, year, cover }) {
 				backgroundSize: '100% auto',
 			}}
 		>
-			<div className="book-info bg-gradient">
+			<div className="book-info">
 				<div>{title}</div>
 				<div>{author}</div>
 				<div>{year}</div>
