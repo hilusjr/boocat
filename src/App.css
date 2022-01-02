@@ -9,7 +9,7 @@
 	--light900: rgb(240, 240, 240);
 	--light700: rgb(200, 200, 200);
 	--light400: rgb(160, 160, 160);
-	background-color: var(--light1000);
+	/* background-color: var(--light1000); */
 }
 
 button {

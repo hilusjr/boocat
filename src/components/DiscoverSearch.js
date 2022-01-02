@@ -19,9 +19,7 @@ function DiscoverSearch({ search, isSearched }) {
 	// console.log(data)
 
 	return (
-		<div
-			style={isSearched ? { display: 'block' } : { display: 'none' }}
-		>
+		<div style={isSearched ? { display: 'block' } : { display: 'none' }}>
 			<h2 className="search-h2">
 				Results for: <span>{search}</span>
 			</h2>
