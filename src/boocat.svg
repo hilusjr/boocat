@@ -1,0 +1,29 @@
+<svg width="1024" height="1024" viewBox="0 0 1024 1024" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_2_7)">
+<rect width="1024" height="1024" fill="white"/>
+<rect width="1024" height="1024" fill="url(#paint0_linear_2_7)"/>
+<ellipse cx="508.814" cy="552.851" rx="389.735" ry="337.149" fill="white"/>
+<path d="M87.5157 100.8L333.623 272.963L173.381 392.128L87.5157 100.8Z" fill="white"/>
+<path d="M936.649 106.203L690.541 278.366L850.783 397.531L936.649 106.203Z" fill="white"/>
+<path d="M510.5 653L565.493 563H455.507L510.5 653Z" fill="url(#paint1_linear_2_7)"/>
+<line y1="-10" x2="348.202" y2="-10" transform="matrix(0.980701 -0.195513 0.188568 0.98206 622.818 579.867)" stroke="#FEB8FF" stroke-width="20"/>
+<line y1="-10" x2="348.202" y2="-10" transform="matrix(-0.980701 -0.195513 -0.188568 0.98206 395.87 579.867)" stroke="#B8F6FF" stroke-width="20"/>
+<line y1="-10" x2="319.679" y2="-10" transform="matrix(0.998536 0.0540845 -0.0520965 0.998642 620.697 615.526)" stroke="#FEB8FF" stroke-width="20"/>
+<line y1="-10" x2="319.679" y2="-10" transform="matrix(-0.998536 0.0540845 0.0520965 0.998642 397.991 615.526)" stroke="#B8F6FF" stroke-width="20"/>
+<line y1="-10" x2="295.361" y2="-10" transform="matrix(0.955081 0.296346 -0.286334 0.95813 616.455 642.542)" stroke="#FEB8FF" stroke-width="20"/>
+<line y1="-10" x2="295.361" y2="-10" transform="matrix(-0.955081 0.296346 0.286334 0.95813 402.233 642.542)" stroke="#B8F6FF" stroke-width="20"/>
+</g>
+<defs>
+<linearGradient id="paint0_linear_2_7" x1="0" y1="0" x2="1024" y2="1024" gradientUnits="userSpaceOnUse">
+<stop stop-color="#00F0FF"/>
+<stop offset="1" stop-color="#FF00E5"/>
+</linearGradient>
+<linearGradient id="paint1_linear_2_7" x1="574" y1="653" x2="470.661" y2="510.016" gradientUnits="userSpaceOnUse">
+<stop stop-color="#FC6BFF"/>
+<stop offset="1" stop-color="#14FFFF"/>
+</linearGradient>
+<clipPath id="clip0_2_7">
+<rect width="1024" height="1024" fill="white"/>
+</clipPath>
+</defs>
+</svg>

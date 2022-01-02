@@ -1,0 +1,35 @@
+.login-card {
+	display: flex;
+	flex-direction: column;
+	width: 25rem;
+	margin: 5rem auto 0 auto;
+	padding: 1rem;
+	text-transform: capitalize;
+	font-size: 1.5rem;
+	border-radius: 0.5rem;
+	-webkit-box-shadow: 0px 0px 7px -2px rgba(66, 68, 90, 1);
+	-moz-box-shadow: 0px 0px 7px -2px rgba(66, 68, 90, 1);
+	box-shadow: 0px 0px 7px -2px rgba(66, 68, 90, 1);
+}
+
+.login-card span {
+	margin: 2rem 0 0.5rem 0;
+}
+
+.login-card input {
+	font-size: 1.5rem;
+	padding: 0.5rem;
+}
+
+.login-card button {
+	padding: 0.5em 1em;
+	font-size: 1.5rem;
+	font-weight: 600;
+	text-transform: uppercase;
+	border-radius: 0.25em;
+	border: none;
+}
+
+.login-card button:first-of-type {
+	margin: 2rem 0 0.5rem 0;
+}

@@ -1,0 +1,67 @@
+header {
+	position: fixed;
+	inset: 0 0 auto 0;
+	padding: 0.5rem 1rem;
+	display: flex;
+	background-color: var(--light1000);
+	z-index: 9999;
+}
+header div:first-child {
+	height: 3rem;
+	width: 3rem;
+	margin-right: 1rem;
+	background-image: url('../boocat.svg');
+	background-size: contain;
+	border-radius: 0.25rem;
+}
+
+header span {
+	font-size: 3rem;
+	font-weight: 700;
+}
+.user-icon {
+	margin-left: auto;
+	margin-top: 0.7rem;
+	font-size: 2rem;
+}
+
+aside {
+	position: fixed;
+	top: 5rem;
+	width: 20rem;
+}
+
+aside div {
+	cursor: pointer;
+	margin-bottom: 0.2rem;
+	padding: 1rem 0 1rem 1rem;
+	font-size: 1.25rem;
+	font-weight: 600;
+	background: #fff;
+	background: -webkit-linear-gradient(
+		to bottom right,
+		#0aefff 0%,
+		#ee00ff 100%
+	);
+	background-image: -moz-linear-gradient(to right, #0aefff 0%, #ee00ff 100%);
+	background-image: linear-gradient(to right, #0aefff 0%, #ee00ff 100%);
+	background-repeat: no-repeat;
+	background-position-x: -20rem;
+	border-radius: 0 0.5rem 0.5rem 0;
+	transition: all 0.2s ease-in-out, font-weight 0s 0.1s;
+}
+
+aside div:hover {
+	background-position-x: 0;
+	font-weight: 800;
+	color: var(--light1000);
+}
+
+.page-content {
+	position: absolute;
+	top: 5rem;
+	left: 20rem;
+	padding: 0 3rem;
+	width: calc(100% - 20rem);
+	box-sizing: border-box;
+}
