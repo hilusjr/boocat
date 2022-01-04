@@ -1,0 +1,35 @@
+<svg width="946" height="833" viewBox="0 0 946 833" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_11_2)">
+<g filter="url(#filter0_d_11_2)">
+<ellipse cx="466.814" cy="472.851" rx="389.735" ry="337.149" fill="white"/>
+<path d="M45.5157 20.7997L291.623 192.963L131.381 312.128L45.5157 20.7997Z" fill="white"/>
+<path d="M894.649 26.2028L648.541 198.366L808.783 317.531L894.649 26.2028Z" fill="white"/>
+<path d="M468.5 573L523.493 483H413.507L468.5 573Z" fill="url(#paint0_linear_11_2)"/>
+<line y1="-10" x2="348.202" y2="-10" transform="matrix(0.980701 -0.195513 0.188568 0.98206 580.818 499.866)" stroke="#FEB8FF" stroke-width="20"/>
+<line y1="-10" x2="348.202" y2="-10" transform="matrix(-0.980701 -0.195513 -0.188568 0.98206 353.87 499.866)" stroke="#B8F6FF" stroke-width="20"/>
+<line y1="-10" x2="319.679" y2="-10" transform="matrix(0.998536 0.0540845 -0.0520965 0.998642 578.697 535.526)" stroke="#FEB8FF" stroke-width="20"/>
+<line y1="-10" x2="319.679" y2="-10" transform="matrix(-0.998536 0.0540845 0.0520965 0.998642 355.991 535.526)" stroke="#B8F6FF" stroke-width="20"/>
+<line y1="-10" x2="295.361" y2="-10" transform="matrix(0.955081 0.296346 -0.286334 0.95813 574.455 562.542)" stroke="#FEB8FF" stroke-width="20"/>
+<line y1="-10" x2="295.361" y2="-10" transform="matrix(-0.955081 0.296346 0.286334 0.95813 360.233 562.542)" stroke="#B8F6FF" stroke-width="20"/>
+</g>
+</g>
+<defs>
+<filter id="filter0_d_11_2" x="-7.61188" y="0.799683" width="949.911" height="829.2" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset/>
+<feGaussianBlur stdDeviation="10"/>
+<feComposite in2="hardAlpha" operator="out"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_11_2"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_11_2" result="shape"/>
+</filter>
+<linearGradient id="paint0_linear_11_2" x1="532" y1="573" x2="428.661" y2="430.016" gradientUnits="userSpaceOnUse">
+<stop stop-color="#FC6BFF"/>
+<stop offset="1" stop-color="#14FFFF"/>
+</linearGradient>
+<clipPath id="clip0_11_2">
+<rect width="946" height="833" fill="white"/>
+</clipPath>
+</defs>
+</svg>

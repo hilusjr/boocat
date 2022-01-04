@@ -5,6 +5,7 @@ function Welcome() {
 	const [offset, setOffset] = useState(0)
 	window.addEventListener('scroll', () => {
 		const offsetTop = window.pageYOffset
+		if (offsetTop > window.innerHeight) return
 		setOffset(offsetTop)
 	})
 
@@ -21,10 +22,8 @@ function Welcome() {
 				className="discover-preview"
 				src={discoverPreview}
 				style={{
-					transform: `translate(${-10 + offset / 100}%, ${
-						20 - offset / 25
-					}%) rotate3d(${4 - offset / 500}, ${-3 + offset / 300}, ${
-						0.5 - offset / 1000
+					transform: `translate(${-10 + offset / 100}%, 20%) rotate3d(${4 - offset / 500}, ${-3 + offset / 300}, ${
+						0.5 - offset / 2000
 					}, 45deg) scale(1.2)`,
 				}}
 			/>

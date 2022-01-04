@@ -1,6 +1,8 @@
 import boocat from '../boocat.svg'
 import '../LandingPage/LandingPage.css'
-import About from './About'
+import AboutCatalog from './AboutCatalog'
+import AboutBookat from './AboutBookat'
+import AboutBoo from './AboutBoo'
 import Welcome from './Welcome'
 
 function LandingPage() {
@@ -14,7 +16,9 @@ function LandingPage() {
 			</nav>
 
 			<Welcome />
-			<About />
+			<AboutCatalog />
+			<AboutBookat />
+			<AboutBoo />
 		</>
 	)
 }
