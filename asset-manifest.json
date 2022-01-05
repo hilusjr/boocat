@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/boocat/static/css/main.0cc644b4.css",
+    "main.js": "/boocat/static/js/main.abcaa0f8.js",
+    "static/js/787.adcdab02.chunk.js": "/boocat/static/js/787.adcdab02.chunk.js",
+    "static/media/discover-preview.svg": "/boocat/static/media/discover-preview.8eb1edf885a1065a09321a12468d0c49.svg",
+    "static/media/paw.svg": "/boocat/static/media/paw.8a19749687484445e40ffed36b8d021f.svg",
+    "static/media/boo.svg": "/boocat/static/media/boo.d1f8137a4cd6de3c1cbc36431a9b42ab.svg",
+    "static/media/head.svg": "/boocat/static/media/head.e12edbc51ab336d6cfcb678421115879.svg",
+    "static/media/boocat.svg": "/boocat/static/media/boocat.40000f09d40fa43459433d9efe9c8807.svg",
+    "index.html": "/boocat/index.html",
+    "main.0cc644b4.css.map": "/boocat/static/css/main.0cc644b4.css.map",
+    "main.abcaa0f8.js.map": "/boocat/static/js/main.abcaa0f8.js.map",
+    "787.adcdab02.chunk.js.map": "/boocat/static/js/787.adcdab02.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0cc644b4.css",
+    "static/js/main.abcaa0f8.js"
+  ]
+}
