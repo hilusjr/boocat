@@ -1,17 +1,26 @@
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Outlet,
+} from 'react-router-dom'
 import './App.css'
 import LandingPage from './LandingPage/LandingPage'
-import LoginPage from './LoginPage/LoginPage'
 import Boocat from './Boocat'
 
+
 function App() {
-	return (
-		<>
-			<LandingPage />
-			{/* <LoginPage /> */}
-			{/* <Boocat /> */}
-		</>
-	)
+  return (
+    <>
+      <Router>
+        <Routes>
+          <Route index element={<LandingPage />} />
+          <Route path="/boocat-panel" element={<Boocat />} />
+        </Routes>
+      </Router>
+      <Outlet />
+    </>
+  )
 }
 
 export default App
-

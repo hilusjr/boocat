@@ -1,49 +1,45 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import { useState } from 'react'
 import './css/Boocat.css'
 import Discover from './pages/Discover'
-import MyBooks from './pages/MyBooks'
+import Library from './pages/Library'
 
-function Boocat() {
-	const [isScrolled, setScrolled] = useState(false)
+export default function Boocat() {
+  const [isScrolled, setScrolled] = useState(false)
+  const [isActive, setActive] = useState('Discover')
 
-	const boxShadow = {
-		boxShadow: '20rem 0px 10px var(--dark400)',
-	}
+  const boxShadow = {
+    boxShadow: '20rem 0px 10px var(--dark400)',
+  }
 
-	window.addEventListener('scroll', () => {
-		const offset = window.pageYOffset
-		if (offset === 0) {
-			setScrolled(false)
-			return
-		}
-		setScrolled(true)
-	})
+  window.addEventListener('scroll', () => {
+    const offset = window.pageYOffset
+    if (offset === 0) {
+      setScrolled(false)
+      return
+    }
+    setScrolled(true)
+  })
 
-	return (
-		<>
-			<header style={isScrolled ? boxShadow : { boxShadow: 'none' }}>
-				<div></div>
-				<span className="text-gradient">boocat</span>
-				<div className="user-icon">
-					<i className="fa-solid fa-user"></i>
-				</div>
-			</header>
-			<aside>
-				<div>Discover</div>
-				<div>My books</div>
-				<div>Add new book</div>
-			</aside>
-			<section className="page-content">
-				<Router>
-					<Routes>
-						<Route path="/*" element={<Discover />} />
-						<Route path="my-books" element={<MyBooks />} />
-					</Routes>
-				</Router>
-			</section>
-		</>
-	)
+  const activateButton = e => {
+    setActive(e.target.innerText)
+  }
+
+  return (
+    <>
+      <header style={isScrolled ? boxShadow : { boxShadow: 'none' }}>
+        <div></div>
+        <span className="text-gradient">boocat</span>
+        <div className="user-icon">
+          <i className="fa-solid fa-user"></i>
+        </div>
+      </header>
+      <aside>
+        <div onClick={activateButton}>Discover</div>
+        <div onClick={activateButton}>Library</div>
+        <div>Add new book</div>
+      </aside>
+      <Discover isActive={isActive} />
+      <Library isActive={isActive} />
+    </>
+  )
 }
-
-export default Boocat

@@ -3,44 +3,51 @@ import '../css/Discover.css'
 import DiscoverDefault from '../components/DiscoverDefault'
 import DiscoverSearch from '../components/DiscoverSearch'
 
-function Discover() {
-	const [searchInput, setSearchInput] = useState('')
-	const [search, setSearch] = useState('')
-	const [isSearched, setIsSearched] = useState(false)
+function Discover({ isActive }) {
+  const [searchInput, setSearchInput] = useState('')
+  const [search, setSearch] = useState('')
+  const [isSearched, setIsSearched] = useState(false)
 
-	const keyPressHandler = e => {
-		if (e.key === 'Backspace' && searchInput.length === 0) {
-			setIsSearched(false)
-			return
-		}
-		if (e.key !== 'Enter') return
-		updateSearch()
-	}
+  const keyPressHandler = e => {
+    if (e.key === 'Backspace' && searchInput.length === 0) {
+      setIsSearched(false)
+      return
+    }
+    if (e.key !== 'Enter') return
+    updateSearch()
+  }
 
-	const updateSearch = () => {
-		if (searchInput.length === 0) return
-		setSearch(searchInput)
-		setIsSearched(true)
-	}
+  const updateSearch = () => {
+    if (searchInput.length === 0) return
+    setSearch(searchInput)
+    setIsSearched(true)
+  }
 
-	return (
-		<div className="discover">
-			<div className="discover-header">
-				<h1>Discover</h1>
-				<input
-					type="text"
-					className="search-bar"
-					placeholder="Search"
-					onChange={e => setSearchInput(e.target.value)}
-					onKeyPress={keyPressHandler}
-					onKeyUp={keyPressHandler}
-				/>
-				<button onClick={updateSearch}>SEARCH</button>
-			</div>
-			<DiscoverDefault isSearched={isSearched} />
-			<DiscoverSearch search={search} isSearched={isSearched} />
-		</div>
-	)
+  return (
+    <section
+      className="page-content"
+      style={
+        isActive === 'Discover' ? { display: 'block' } : { display: 'none' }
+      }
+    >
+      <div className="discover">
+        <div className="discover-header">
+          <h1>Discover</h1>
+          <input
+            type="text"
+            className="search-bar"
+            placeholder="Search"
+            onChange={e => setSearchInput(e.target.value)}
+            onKeyPress={keyPressHandler}
+            onKeyUp={keyPressHandler}
+          />
+          <button onClick={updateSearch}>SEARCH</button>
+        </div>
+        <DiscoverDefault isSearched={isSearched} />
+        <DiscoverSearch search={search} isSearched={isSearched} />
+      </div>
+    </section>
+  )
 }
 
 export default Discover
