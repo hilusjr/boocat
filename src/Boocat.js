@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import './css/Boocat.css'
+import './css/ContentPages.css'
 import Discover from './pages/Discover'
 import Library from './pages/Library'
 

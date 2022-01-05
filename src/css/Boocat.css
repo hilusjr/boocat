@@ -70,3 +70,99 @@ aside div:hover {
   width: calc(100% - 20rem);
   box-sizing: border-box;
 }
+
+/* ------------------------------------- CONTENT --------------------------------------- */
+.page-content h1 {
+  font-size: 4rem;
+}
+
+.page-content h2 {
+  margin: 5rem 0 1rem 0;
+  font-size: 3rem;
+  width: 100%;
+  text-transform: capitalize;
+}
+
+.search-bar,
+.search-button {
+  padding: 0.5rem 1rem;
+  font-size: 2rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 0.5rem;
+  background-color: var(--light900);
+  color: var(--dark700);
+}
+
+.search-bar {
+  width: 40%;
+  margin-left: auto;
+}
+
+/* ----------------------------------------- BOOK ---------------------------------------- */
+.book-card {
+  position: relative;
+  height: 30rem;
+  -webkit-box-shadow: 0px 0px 5px -1px rgba(66, 68, 90, 1);
+  -moz-box-shadow: 0px 0px 5px -1px rgba(66, 68, 90, 1);
+  box-shadow: 0px 0px 5px -1px rgba(66, 68, 90, 1);
+  overflow: hidden;
+  border-radius: 0.5rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.book-info {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  min-height: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 0 1rem;
+  box-sizing: border-box;
+  background-color: hsl(0 0% 0% / 0.8);
+  color: var(--light1000);
+  transition: all 0.2s ease-in-out;
+}
+@supports (backdrop-filter: blur(2rem)) {
+  .book-info {
+    background-color: hsl(0 0% 0% / 0.7);
+    backdrop-filter: blur(0.75rem);
+  }
+}
+
+.book-options-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  opacity: 0;
+  position: absolute;
+  z-index: 999;
+  width: 100%;
+  height: 100%;
+  color: var(--light1000);
+  background-color: hsl(0 0% 0% / 0.85);
+  transform: scale(1.5);
+  transition: all 0.2s ease-in-out;
+}
+
+.book-options-menu div {
+  gap: 1rem;
+  cursor: pointer;
+}
+
+.book-card:hover {
+  background-size: 200%;
+}
+
+.book-card:hover .book-options-menu {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.book-card:hover .book-info {
+  opacity: 0;
+}

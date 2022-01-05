@@ -1,5 +1,4 @@
 import { useState } from 'react'
-import '../css/Discover.css'
 import DiscoverDefault from '../components/DiscoverDefault'
 import DiscoverSearch from '../components/DiscoverSearch'
 
@@ -25,27 +24,31 @@ function Discover({ isActive }) {
 
   return (
     <section
-      className="page-content"
+      className="discover page-content"
       style={
         isActive === 'Discover' ? { display: 'block' } : { display: 'none' }
       }
     >
-      <div className="discover">
-        <div className="discover-header">
-          <h1>Discover</h1>
-          <input
-            type="text"
-            className="search-bar"
-            placeholder="Search"
-            onChange={e => setSearchInput(e.target.value)}
-            onKeyPress={keyPressHandler}
-            onKeyUp={keyPressHandler}
-          />
-          <button onClick={updateSearch}>SEARCH</button>
-        </div>
-        <DiscoverDefault isSearched={isSearched} />
-        <DiscoverSearch search={search} isSearched={isSearched} />
+      <div className="discover-header">
+        <h1>Discover</h1>
+        <input
+          type="text"
+          className="search-bar"
+          placeholder="Search"
+          onChange={e => setSearchInput(e.target.value)}
+          onKeyPress={keyPressHandler}
+          onKeyUp={keyPressHandler}
+        />
+        <button onClick={updateSearch} className="search-button">
+          SEARCH
+        </button>
       </div>
+      <DiscoverDefault isSearched={isSearched} isActive={isActive} />
+      <DiscoverSearch
+        search={search}
+        isSearched={isSearched}
+        isActive={isActive}
+      />
     </section>
   )
 }
