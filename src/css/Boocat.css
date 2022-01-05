@@ -67,7 +67,7 @@ aside div:hover {
   top: 5rem;
   left: 20rem;
   padding: 0 3rem;
-  width: calc(100% - 20rem);
+  min-width: calc(100% - 20rem);
   box-sizing: border-box;
 }
 
@@ -92,11 +92,6 @@ aside div:hover {
   border-radius: 0.5rem;
   background-color: var(--light900);
   color: var(--dark700);
-}
-
-.search-bar {
-  width: 40%;
-  margin-left: auto;
 }
 
 /* ----------------------------------------- BOOK ---------------------------------------- */

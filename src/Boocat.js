@@ -6,7 +6,7 @@ import Library from './pages/Library'
 
 export default function Boocat() {
   const [isScrolled, setScrolled] = useState(false)
-  const [isActive, setActive] = useState('Discover')
+  const [isActive, setActive] = useState('Library')
 
   const boxShadow = {
     boxShadow: '20rem 0px 10px var(--dark400)',
